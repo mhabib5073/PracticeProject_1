@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head></head>
+<title></title>
+<body>
+    <form method="POST">
+        <!-- Security token by Django -->
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Update</button>
+        
+    </form>
+</body>
+</html>
